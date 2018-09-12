@@ -14,7 +14,7 @@ storeRobbery = {};
 rl.on('line', function(line) {
     var res = line.replace(/, /g, " "); 
     var temp = res.split(",", 20);
-    x = temp[17];
+    x = temp[6];
     
     if (line.search("ROBBERY")!=-1){ 
         if(storeRobbery.hasOwnProperty(x))

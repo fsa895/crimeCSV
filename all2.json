@@ -1,9 +1,16 @@
-{   
-    "Robbery":
-             {
-                "2001":18441,"2002":18522,"2003":17332,"2004":15978,"2005":16047,
-                "2006":15968,"2007":15450,"2008":16703,"2009":15979,"2010":14273,
-                "2011":13980,"2012":13483,"2013":11819,"2014":9801,"2015":9647,
-                "2016":3037
-              }
+{"Robbery":{
+            "ATTEMPT: ARMED-KNIFE/CUT INSTR":1892,
+            "AGGRAVATED VEHICULAR HIJACKING":8104,
+            "STRONGARM - NO WEAPON":79718,
+            "ARMED: HANDGUN":79371,
+            "ARMED: OTHER DANGEROUS WEAPON":11425,
+            "ARMED:KNIFE/CUTTING INSTRUMENT":10508,
+            "AGGRAVATED":11072,"VEHICULAR HIJACKING":4210,
+            "ATTEMPT: STRONGARM-NO WEAPON":8919,
+            "ATTEMPT: ARMED-OTHER DANG WEAP":1829,
+            "ATTEMPT: ARMED-OTHER FIREARM":252,
+            "ARMED: OTHER FIREARM":1189,
+            "ATTEMPT: AGGRAVATED":736,
+            "ATTEMPT: ARMED-HANDGUN":7235
+            }
 }
