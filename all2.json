@@ -1,16 +1,1 @@
-{"Robbery":{
-            "ATTEMPT: ARMED-KNIFE/CUT INSTR":1892,
-            "AGGRAVATED VEHICULAR HIJACKING":8104,
-            "STRONGARM - NO WEAPON":79718,
-            "ARMED: HANDGUN":79371,
-            "ARMED: OTHER DANGEROUS WEAPON":11425,
-            "ARMED:KNIFE/CUTTING INSTRUMENT":10508,
-            "AGGRAVATED":11072,"VEHICULAR HIJACKING":4210,
-            "ATTEMPT: STRONGARM-NO WEAPON":8919,
-            "ATTEMPT: ARMED-OTHER DANG WEAP":1829,
-            "ATTEMPT: ARMED-OTHER FIREARM":252,
-            "ARMED: OTHER FIREARM":1189,
-            "ATTEMPT: AGGRAVATED":736,
-            "ATTEMPT: ARMED-HANDGUN":7235
-            }
-}
+[{"Year":"2001","toProperty":27927,"toVehicle":27258,"toState":621},{"Year":"2002","toProperty":26933,"toVehicle":27042,"toState":641},{"Year":"2003","toProperty":24916,"toVehicle":26786,"toState":589},{"Year":"2004","toProperty":24664,"toVehicle":25241,"toState":520},{"Year":"2005","toProperty":25043,"toVehicle":25827,"toState":461},{"Year":"2006","toProperty":25564,"toVehicle":26146,"toState":442},{"Year":"2007","toProperty":23974,"toVehicle":24441,"toState":358},{"Year":"2008","toProperty":23320,"toVehicle":25104,"toState":314},{"Year":"2009","toProperty":21065,"toVehicle":21973,"toState":260},{"Year":"2010","toProperty":18079,"toVehicle":18910,"toState":244},{"Year":"2011","toProperty":17078,"toVehicle":16998,"toState":207},{"Year":"2012","toProperty":16500,"toVehicle":16505,"toState":207},{"Year":"2013","toProperty":14248,"toVehicle":13837,"toState":179},{"Year":"2014","toProperty":12867,"toVehicle":12697,"toState":176},{"Year":"2015","toProperty":13287,"toVehicle":13630,"toState":155},{"Year":"2016","toProperty":4016,"toVehicle":4099,"toState":40}]

@@ -1,0 +1,43 @@
+[{
+    "Type": "ATTEMPT: ARMED-KNIFE/CUT INSTR",
+    "Total": 1892
+}, {
+    "Type": "AGGRAVATED VEHICULAR HIJACKING",
+    "Total": 8104
+}, {
+    "Type": "STRONGARM - NO WEAPON",
+    "Total": 79718
+}, {
+    "Type": "ARMED: HANDGUN",
+    "Total": 79371
+}, {
+    "Type": "ARMED: OTHER DANGEROUS WEAPON",
+    "Total": 11425
+}, {
+    "Type": "ARMED:KNIFE/CUTTING INSTRUMENT",
+    "Total": 10508
+}, {
+    "Type": "AGGRAVATED",
+    "Total": 11072
+}, {
+    "Type": "VEHICULAR HIJACKING",
+    "Total": 4210
+}, {
+    "Type": "ATTEMPT: STRONGARM-NO WEAPON",
+    "Total": 8919
+}, {
+    "Type": "ATTEMPT: ARMED-OTHER DANG WEAP",
+    "Total": 1829
+}, {
+    "Type": "ATTEMPT: ARMED-OTHER FIREARM",
+    "Total": 252
+}, {
+    "Type": "ARMED: OTHER FIREARM",
+    "Total": 1189
+}, {
+    "Type": "ATTEMPT: AGGRAVATED",
+    "Total": 736
+}, {
+    "Type": "ATTEMPT: ARMED-HANDGUN",
+    "Total": 7235
+}]
