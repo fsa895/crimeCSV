@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script data-require="d3@*" data-semver="4.0.0" src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <button><a href="../index.html">Home</a></button>
+
+    <style>
+        .arc text {
+            font: 10px sans-serif;
+            text-anchor: middle;
+        }
+
+        .arc path {
+            stroke: #fff;
+        }
+
+        text {
+            text-rendering: optimize-legibility;
+        }
+    </style>
+    <h1 style="padding-left:500px;">
+        Pie Chart
+    </h1>
+    <svg width="500" height="600" style="margin-left: 350px;">
+    </svg>
+
+    <script>
+        var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height"),
+            radius = Math.min(width, height) / 3,
+            g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+        var color = d3.scaleOrdinal(["#D72638", "#3F88C5", "#F49D37", "#140F2D"]);
+
+        var pie = d3.pie()
+            .sort(null)
+            .value(function (d) {
+                return d.Total;
+            });
+
+        var path = d3.arc()
+            .outerRadius(radius - 10)
+            .innerRadius(0);
+
+        var label = d3.arc()
+            .outerRadius(radius - 40)
+            .innerRadius(radius - 40);
+
+        // var pos = d3.svg.arc().innerRadius(radius + 2).outerRadius(radius + 2); 
+
+
+        d3.json("../json/pieChart.json", function (error, data) {
+            if (error) throw error;
+
+            var arc = g.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "arc");
+
+            arc.append("path")
+                .attr("d", path)
+                .attr("fill", function (d) {
+                    return color(d.data.Type);
+                });
+
+            var getAngle = function (d) {
+                console.log((180 / Math.PI * (d.startAngle + d.endAngle) / 2 - 90))
+                return (180 / Math.PI * (d.startAngle + d.endAngle) / 2 - 90);
+            };
+
+            var pos = d3.arc().innerRadius(radius + 30).outerRadius(radius + 2);
+            console.log(pos)
+
+            arc.append("text")
+                .attr("transform", function (d) {
+                    return "translate(" + pos.centroid(d) + ") " + "rotate(" + getAngle(d) + ")"
+                })
+                .attr("dy", "0.06em")
+                .text(function (d) {
+                    return d.data.Type;
+                });
+
+            //jdflekjgg
+
+            //dfsgdsgsd   
+        });
+    </script>
+
+</body>
+
+</html>
