@@ -17,14 +17,14 @@ rl.on('line', (line) => {
   const x = temp[17];
 
   if (line.search('BURGLARY') !== -1) {
-    if (storeBugglary.hasOwnProperty(x)) {
+    if (Object.prototype.hasOwnProperty.call(storeBugglary, x)) {
       storeBugglary[x] += 1;
     } else {
       storeBugglary[x] = 1;
     }
   }
   if (line.search('ROBBERY') !== -1) {
-    if (storeRobbery.hasOwnProperty(x)) {
+    if (Object.prototype.hasOwnProperty.call(storeRobbery, x)) {
       storeRobbery[x] += 1;
     } else {
       storeRobbery[x] = 1;
@@ -33,17 +33,18 @@ rl.on('line', (line) => {
 });
 
 rl.on('close', () => {
-  for (const prop in storeRobbery) {
+  for (let i = 0, keys = Object.keys(storeRobbery), ii = keys.length; i < ii; i += 1) {
     const store = {
       Year: 0,
       Robbery: '',
       Burglary: '',
     };
-    store.Year = Number(prop);
-    store.Robbery = storeRobbery[prop];
-    store.Burglary = storeBugglary[prop];
+    store.Year = keys[i];
+    store.Robbery = storeRobbery[keys[i]];
+    store.Burglary = storeBugglary[keys[i]];
     finalData.push(store);
   }
+
   const store = {};
   store.CrimeData = finalData;
   const wr = fs.createWriteStream('all.json');
