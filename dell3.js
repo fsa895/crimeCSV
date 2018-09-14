@@ -30,6 +30,7 @@ rl.on('close', () => {
     finalData.push(store);
   }
 
+
   const wr = fs.createWriteStream('all3.json');
   wr.write(JSON.stringify(finalData));
 });
